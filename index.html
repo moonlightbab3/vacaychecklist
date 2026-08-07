@@ -9,10 +9,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="Packing List">
 
-  <meta
-    name="description"
-    content="Offline vacation packing checklist."
-  >
+  <meta name="description" content="Offline vacation packing checklist.">
 
   <title>Vacation Packing List</title>
 
@@ -25,20 +22,13 @@
       --card-hover: #f2fbff;
       --text: #17324d;
       --muted: #668198;
-
       --blue: #4bbce9;
       --blue-dark: #249bc9;
-      --blue-light: #dff7ff;
-
       --border: #b9e2f3;
-
       --danger: #df5b69;
       --danger-bg: #fff0f2;
-
       --checked: #8da4b5;
-
-      --shadow:
-        0 8px 25px rgba(42, 137, 174, 0.10);
+      --shadow: 0 8px 25px rgba(42, 137, 174, 0.10);
     }
 
     * {
@@ -52,9 +42,7 @@
     body {
       margin: 0;
       min-height: 100vh;
-
       color: var(--text);
-
       font-family:
         -apple-system,
         BlinkMacSystemFont,
@@ -94,8 +82,6 @@
       padding: 16px 14px 50px;
     }
 
-    /* HEADER */
-
     header {
       text-align: center;
       padding: 20px 10px 18px;
@@ -104,63 +90,39 @@
     .travel-icon {
       font-size: 52px;
       margin-bottom: 5px;
-
-      filter:
-        drop-shadow(
-          0 5px 8px rgba(40, 140, 180, 0.15)
-        );
+      filter: drop-shadow(0 5px 8px rgba(40, 140, 180, 0.15));
     }
 
     h1 {
       margin: 0;
-
-      font-size:
-        clamp(29px, 7vw, 43px);
-
+      font-size: clamp(29px, 7vw, 43px);
       letter-spacing: -1.2px;
-
       color: #16415f;
     }
 
     .subtitle {
       margin: 8px auto 0;
-
       max-width: 570px;
-
       color: var(--muted);
-
       line-height: 1.5;
-
       font-size: 15px;
     }
 
-    /* PROGRESS */
-
     .progress-card {
       background: rgba(255,255,255,0.9);
-
       border: 1px solid var(--border);
-
       border-radius: 21px;
-
       padding: 18px;
-
       margin: 8px 0 20px;
-
       box-shadow: var(--shadow);
-
       backdrop-filter: blur(8px);
     }
 
     .progress-top {
       display: flex;
-
       align-items: center;
-
       justify-content: space-between;
-
       gap: 10px;
-
       margin-bottom: 11px;
     }
 
@@ -176,35 +138,19 @@
 
     .progress-bar {
       height: 11px;
-
       width: 100%;
-
       background: #d8edf6;
-
       border-radius: 999px;
-
       overflow: hidden;
     }
 
     .progress-fill {
       height: 100%;
-
       width: 0%;
-
-      background:
-        linear-gradient(
-          90deg,
-          #43b6e5,
-          #72d5f4
-        );
-
+      background: linear-gradient(90deg, #43b6e5, #72d5f4);
       border-radius: inherit;
-
-      transition:
-        width 0.25s ease;
+      transition: width 0.25s ease;
     }
-
-    /* CATEGORY */
 
     .category {
       margin-bottom: 25px;
@@ -212,29 +158,19 @@
 
     .category-header {
       display: flex;
-
       align-items: center;
-
       gap: 8px;
-
       margin: 0 3px 9px;
     }
 
     .category-title {
       display: flex;
-
       align-items: center;
-
       gap: 8px;
-
       min-width: 0;
-
       flex: 1;
-
       margin: 0;
-
       font-size: 19px;
-
       color: #214d68;
     }
 
@@ -249,53 +185,33 @@
 
     .category-count {
       color: var(--muted);
-
       font-size: 12px;
-
       font-weight: 700;
-
       white-space: nowrap;
     }
 
-    /* CATEGORY ADD BUTTON */
-
     .category-add-btn {
       flex: 0 0 auto;
-
       border: 1px solid #9ed8ec;
-
       background: rgba(255,255,255,0.85);
-
       color: var(--blue-dark);
-
       border-radius: 9px;
-
       padding: 6px 9px;
-
       font-size: 12px;
-
       font-weight: 800;
-
       transition: 0.15s ease;
     }
 
     .category-add-btn:hover {
       background: #ffffff;
-
       border-color: var(--blue);
-
       transform: translateY(-1px);
     }
 
-    /* CATEGORY ADD BOX */
-
     .category-add-box {
       display: none;
-
       gap: 7px;
-
-      margin:
-        0 0 8px 3px;
+      margin: 0 0 8px 3px;
     }
 
     .category-add-box.open {
@@ -304,94 +220,54 @@
 
     .category-add-input {
       flex: 1;
-
       min-width: 0;
-
-      border:
-        1px solid var(--border);
-
+      border: 1px solid var(--border);
       border-radius: 11px;
-
       padding: 10px 12px;
-
       background: white;
-
       color: var(--text);
-
       outline: none;
     }
 
     .category-add-input:focus {
       border-color: var(--blue);
-
-      box-shadow:
-        0 0 0 3px
-        rgba(75,188,233,0.13);
+      box-shadow: 0 0 0 3px rgba(75,188,233,0.13);
     }
 
     .category-save-btn {
       border: 0;
-
       border-radius: 10px;
-
       background: var(--blue);
-
       color: white;
-
       padding: 0 13px;
-
       font-weight: 800;
     }
 
     .category-cancel-btn {
       border: 1px solid var(--border);
-
       border-radius: 10px;
-
       background: white;
-
       color: var(--muted);
-
       padding: 0 11px;
-
       font-weight: 700;
     }
 
-    /* ITEMS */
-
     .items {
       display: grid;
-
       gap: 7px;
     }
 
     .item {
       display: flex;
-
       align-items: center;
-
       gap: 11px;
-
       min-height: 52px;
-
-      padding:
-        11px 10px 11px 12px;
-
-      background:
-        rgba(255,255,255,0.94);
-
-      border:
-        1px solid var(--border);
-
+      padding: 11px 10px 11px 12px;
+      background: rgba(255,255,255,0.94);
+      border: 1px solid var(--border);
       border-radius: 14px;
-
-      box-shadow:
-        0 3px 12px
-        rgba(42,137,174,0.06);
-
-      transition:
-        background 0.15s ease,
-        transform 0.12s ease;
+      box-shadow: 0 3px 12px rgba(42,137,174,0.06);
+      transition: background 0.15s ease, transform 0.12s ease;
     }
 
     .item:hover {
@@ -402,168 +278,100 @@
       transform: scale(0.995);
     }
 
-    /* CHECKBOX */
-
     .checkbox {
       width: 24px;
-
       height: 24px;
-
       flex: 0 0 24px;
-
-      border:
-        2px solid #8eb5c8;
-
+      border: 2px solid #8eb5c8;
       border-radius: 7px;
-
       background: white;
-
       color: transparent;
-
       display: flex;
-
       align-items: center;
-
       justify-content: center;
-
       padding: 0;
-
       transition: 0.15s ease;
     }
 
     .checkbox.checked {
       background: var(--blue);
-
       border-color: var(--blue);
-
       color: white;
     }
 
     .checkmark {
       font-size: 15px;
-
       font-weight: 900;
-
       line-height: 1;
     }
 
-    /* ITEM NAME */
-
     .item-name {
       flex: 1;
-
       min-width: 0;
-
       line-height: 1.4;
-
       word-break: break-word;
     }
 
     .item.checked .item-name {
       color: var(--checked);
-
       text-decoration: line-through;
     }
 
-    /* CUSTOM LABEL */
-
     .custom-label {
       display: inline-block;
-
       margin-left: 7px;
-
-      padding:
-        2px 6px;
-
+      padding: 2px 6px;
       border-radius: 5px;
-
       background: #e2f7fd;
-
       color: #349abd;
-
       font-size: 9px;
-
       font-weight: 800;
-
       text-transform: uppercase;
-
       letter-spacing: 0.5px;
-
       vertical-align: middle;
     }
 
-    /* REMOVE */
-
     .delete-btn {
       width: 32px;
-
       height: 32px;
-
       flex: 0 0 32px;
-
       border: 0;
-
       border-radius: 9px;
-
       background: transparent;
-
       color: #9ab0bd;
-
       font-size: 21px;
-
       line-height: 1;
-
       display: flex;
-
       align-items: center;
-
       justify-content: center;
-
       transition: 0.15s ease;
     }
 
     .delete-btn:hover {
       color: var(--danger);
-
       background: var(--danger-bg);
     }
 
-    /* ACTIONS */
-
     .actions {
       display: flex;
-
       justify-content: center;
-
       gap: 9px;
-
       flex-wrap: wrap;
-
       margin-top: 30px;
     }
 
     .action-btn {
-      border:
-        1px solid var(--border);
-
-      background:
-        rgba(255,255,255,0.9);
-
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.9);
       color: #31536b;
-
-      padding:
-        11px 16px;
-
+      padding: 11px 16px;
       border-radius: 12px;
-
       font-weight: 700;
-
       transition: 0.15s ease;
     }
 
     .action-btn:hover {
       background: white;
-
       border-color: #91d4ec;
     }
 
@@ -571,35 +379,16 @@
       color: var(--danger);
     }
 
-    /* EMPTY */
-
-    .empty {
-      text-align: center;
-
-      color: var(--muted);
-
-      padding: 30px 15px;
-    }
-
-    /* FOOTER */
-
     footer {
       text-align: center;
-
       color: #7190a3;
-
       font-size: 12px;
-
       margin-top: 28px;
     }
 
-    /* MOBILE */
-
     @media (max-width: 560px) {
-
       .app {
-        padding:
-          10px 10px 40px;
+        padding: 10px 10px 40px;
       }
 
       header {
@@ -625,8 +414,7 @@
       }
 
       .category-add-btn {
-        padding:
-          7px 9px;
+        padding: 7px 9px;
       }
 
       .category-add-box {
@@ -635,20 +423,16 @@
 
       .category-save-btn,
       .category-cancel-btn {
-        padding:
-          0 10px;
+        padding: 0 10px;
       }
 
       .item {
-        padding:
-          10px 8px 10px 10px;
+        padding: 10px 8px 10px 10px;
       }
 
       .delete-btn {
         width: 30px;
-
         height: 30px;
-
         flex-basis: 30px;
       }
     }
@@ -660,74 +444,45 @@
 <div class="app">
 
   <header>
+    <div class="travel-icon">✈️</div>
 
-    <div class="travel-icon">
-      ✈️
-    </div>
-
-    <h1>
-      Vacation Packing List
-    </h1>
+    <h1>Vacation Packing List</h1>
 
     <p class="subtitle">
       Check things off as you pack and add anything
       you don't want to forget.
     </p>
-
   </header>
-
-  <!-- PROGRESS -->
 
   <section class="progress-card">
 
     <div class="progress-top">
 
-      <div
-        class="progress-text"
-        id="progressText"
-      >
+      <div class="progress-text" id="progressText">
         0 of 0 packed
       </div>
 
-      <div
-        class="progress-percent"
-        id="progressPercent"
-      >
+      <div class="progress-percent" id="progressPercent">
         0%
       </div>
 
     </div>
 
     <div class="progress-bar">
-
-      <div
-        class="progress-fill"
-        id="progressFill"
-      ></div>
-
+      <div class="progress-fill" id="progressFill"></div>
     </div>
 
   </section>
 
-  <!-- LIST -->
-
   <main id="list"></main>
-
-  <!-- ACTIONS -->
 
   <div class="actions">
 
-    <button
-      class="action-btn"
-      id="uncheckAll"
-    >
+    <button class="action-btn" id="uncheckAll">
       ↩ Uncheck All
     </button>
 
-    <button
-      class="action-btn danger"
-      id="resetAll"
-    >
+    <button class="action-btn danger" id="resetAll">
       🗑 Reset Everything
     </button>
 
@@ -741,1204 +496,1014 @@
 
 <script>
 
-  const STORAGE_KEY =
-    "vacationPackingList_v4";
-
-
-  /*
-    ORIGINAL PACKING LIST
-  */
-
-  const categories = [
-
-    {
-      name: "Important Documents",
-      icon: "🪪",
-
-      items: [
-        "ID / driver's license",
-        "Passport (if international)",
-        "Boarding pass / travel tickets",
-        "Hotel reservation",
-        "Rental car reservation",
-        "Travel insurance information",
-        "Credit / debit cards",
-        "Cash",
-        "Emergency contact information"
-      ]
-    },
-
-
-    {
-      name: "Clothes",
-      icon: "👕",
-
-      items: [
-        "Underwear — 1 per day + 2–3 extra",
-        "Bras",
-        "Socks",
-        "T-shirts / tops",
-        "Pants / jeans",
-        "Shorts",
-        "Dresses / skirts",
-        "Pajamas",
-        "Sweater / hoodie",
-        "Light jacket",
-        "Swimsuit",
-        "Cover-up",
-        "Comfortable walking outfit",
-        "Dirty-laundry bag"
-      ]
-    },
-
-
-    {
-      name: "Shoes",
-      icon: "👟",
-
-      items: [
-        "Comfortable walking shoes",
-        "Sandals / flip-flops",
-        "Dress shoes",
-        "Extra shoes if needed"
-      ]
-    },
-
-
-    {
-      name: "Toiletries",
-      icon: "🧴",
-
-      items: [
-        "Toothbrush",
-        "Toothpaste",
-        "Floss",
-        "Shampoo",
-        "Conditioner",
-        "Body wash / soap",
-        "Face wash",
-        "Moisturizer",
-        "Deodorant",
-        "Hairbrush / comb",
-        "Hair ties / clips",
-        "Razor",
-        "Shaving products",
-        "Makeup",
-        "Makeup remover",
-        "Body spray",
-        "Feminine hygiene products",
-        "Nail clippers / file",
-
-        "Alcohol spray/wipes",
-        "Pads",
-        "Q-tips",
-        "Baby wipes",
-        "Anti-itch cream"
-      ]
-    },
-
-
-    {
-      name: "Sun & Outdoor",
-      icon: "☀️",
-
-      items: [
-        "Sunglasses",
-        "Hat",
-        "Sunscreen",
-        "SPF lip balm",
-        "Reusable water bottle",
-        "Beach bag",
-        "Towel",
-        "Bug spray",
-        "Beach chair",
-        "Beach mat"
-      ]
-    },
-
-
-    {
-      name: "Health & Personal Care",
-      icon: "💊",
-
-      items: [
-        "Prescription medications",
-        "OTC medications",
-        "Band-aids",
-        "Hand sanitizer",
-        "Wet wipes",
-        "Tissues",
-        "Personal first-aid items",
-        "Any personal care items",
-
-        "Vitamins (Inositol, lysine, etc.)",
-        "OTC medication (Benadryl, ibuprofen)"
-      ]
-    },
-
-
-    {
-      name: "Electronics",
-      icon: "🔌",
-
-      items: [
-        "Phone",
-        "Phone charger",
-        "Power bank",
-        "Laptop / tablet",
-        "Laptop / tablet charger",
-        "Headphones / earbuds",
-        "Camera",
-        "Camera charger / batteries",
-        "SD card",
-        "Travel adapter",
-        "Charging cables"
-      ]
-    },
-
-
-    {
-      name: "Carry-On / Personal Bag",
-      icon: "👜",
-
-      items: [
-        "ID / passport",
-        "Wallet",
-        "Phone",
-        "Chargers",
-        "Power bank",
-        "Medications",
-        "Headphones",
-        "Sunglasses",
-        "Water bottle",
-        "Snacks",
-        "Tissues / wipes",
-        "Lip balm",
-        "Hand sanitizer",
-        "Change of clothes",
-        "Essential toiletries",
-        "Hotel / travel information"
-      ]
-    },
-
-
-    {
-      name: "Hotel Extras",
-      icon: "🏨",
-
-      items: [
-        "Sleep mask",
-        "Earplugs",
-        "Laundry bag",
-        "Small tote bag",
-        "Reusable shopping bag",
-        "Travel-size detergent",
-        "Small fan",
-        "Extra charging cable",
-
-        "Rice cooker",
-        "Slippers",
-        "Steamer stick (HDMI TV)",
-        "Disposable cups, plates, plasticware"
-      ]
-    },
-
-
-    {
-      name: "Road Trip",
-      icon: "🚗",
-
-      items: [
-        "Driver's license",
-        "Vehicle registration",
-        "Car insurance information",
-        "Car charger",
-        "Road-trip snacks",
-        "Water",
-        "Blanket",
-        "Emergency kit",
-        "Jumper cables",
-        "Tire-pressure gauge",
-        "Trash bags",
-        "Offline maps"
-      ]
-    },
-
-
-    {
-      name: "Before You Leave Home",
-      icon: "🏠",
-
-      items: [
-        "Check the cats",
-        "Cat food",
-        "Unplug the plugs",
-        "Lock doors and windows",
-        "Take out the trash",
-        "Turn off appliances",
-        "Check the stove / oven",
-        "Set thermostat",
-        "Take out perishables",
-        "Check pet / care arrangements",
-        "Download tickets / reservations",
-        "Check the weather",
-        "Weigh luggage"
-      ]
-    }
-
-  ];
-
-
-  /*
-    STATE
-
-    checked:
-      Items you have packed.
-
-    removed:
-      Built-in items you deleted.
-
-    custom:
-      Items you added to a category.
-  */
-
-  let state = {
-
-    checked: {},
-
-    removed: {},
-
-    custom: {}
-
-  };
-
-
-  /*
-    LOAD
-  */
-
-  function loadState() {
-
-    try {
-
-      const saved =
-        localStorage.getItem(
-          STORAGE_KEY
-        );
-
-      if (saved) {
-
-        const parsed =
-          JSON.parse(saved);
-
-        state = {
-
-          checked:
-            parsed.checked || {},
-
-          removed:
-            parsed.removed || {},
-
-          custom:
-            parsed.custom || {}
-
-        };
-
-      }
-
-    } catch (error) {
-
-      console.log(
-        "Could not load saved checklist.",
-        error
-      );
+const STORAGE_KEY = "vacationPackingList_v5";
+
+const categories = [
+
+  {
+    name: "Important Documents",
+    icon: "🪪",
+    items: [
+      "House keys",
+      "ID / driver's license",
+      "Passport (if international)",
+      "Boarding pass / travel tickets",
+      "Hotel reservation",
+      "Rental car reservation",
+      "Travel insurance information",
+      "Credit / debit cards",
+      "Cash",
+      "Emergency contact information"
+    ]
+  },
+
+  {
+    name: "Clothes",
+    icon: "👕",
+    items: [
+      "Underwear — 1 per day + 2–3 extra",
+      "Bras",
+      "Socks",
+      "T-shirts / tops",
+      "Pants / jeans",
+      "Shorts",
+      "Dresses / skirts",
+      "Pajamas",
+      "Sweater / hoodie",
+      "Light jacket",
+      "Swimsuit",
+      "Cover-up",
+      "Comfortable walking outfit",
+      "Dirty-laundry bag"
+    ]
+  },
+
+  {
+    name: "Shoes",
+    icon: "👟",
+    items: [
+      "Comfortable walking shoes",
+      "Sandals / flip-flops",
+      "Dress shoes",
+      "Extra shoes if needed"
+    ]
+  },
+
+  {
+    name: "Toiletries",
+    icon: "🧴",
+    items: [
+      "Toothbrush",
+      "Toothpaste",
+      "Floss",
+      "Shampoo",
+      "Conditioner",
+      "Body wash / soap",
+      "Face wash",
+      "Moisturizer",
+      "Deodorant",
+      "Hairbrush / comb",
+      "Hair ties / clips",
+      "Razor",
+      "Shaving products",
+      "Makeup",
+      "Makeup remover",
+      "Body spray",
+      "Feminine hygiene products",
+      "Nail clippers / file",
+      "Alcohol spray/wipes",
+      "Pads",
+      "Q-tips",
+      "Baby wipes"
+    ]
+  },
+
+  {
+    name: "Sun & Outdoor",
+    icon: "☀️",
+    items: [
+      "Sunglasses",
+      "Hat",
+      "Sunscreen",
+      "SPF lip balm",
+      "Reusable water bottle",
+      "Beach bag",
+      "Towel",
+      "Bug spray",
+      "Beach chair",
+      "Beach mat"
+    ]
+  },
+
+  {
+    name: "Health & Personal Care",
+    icon: "💊",
+    items: [
+      "Prescription medications",
+      "OTC medications",
+      "Band-aids",
+      "Hand sanitizer",
+      "Wet wipes",
+      "Tissues",
+      "Personal first-aid items",
+      "Any personal care items",
+      "Vitamins (Inositol, lysine, etc.)",
+      "OTC medication (Benadryl, ibuprofen)",
+      "Anti-itch cream"
+    ]
+  },
+
+  {
+    name: "Electronics",
+    icon: "🔌",
+    items: [
+      "Phone",
+      "Phone charger",
+      "Power bank",
+      "Laptop / tablet",
+      "Laptop / tablet charger",
+      "Headphones / earbuds",
+      "Camera",
+      "Camera charger / batteries",
+      "SD card",
+      "Travel adapter",
+      "Charging cables"
+    ]
+  },
+
+  {
+    name: "Carry-On / Personal Bag",
+    icon: "👜",
+    items: [
+      "ID / passport",
+      "Wallet",
+      "Phone",
+      "Chargers",
+      "Power bank",
+      "Medications",
+      "Headphones",
+      "Sunglasses",
+      "Water bottle",
+      "Snacks",
+      "Tissues / wipes",
+      "Lip balm",
+      "Hand sanitizer",
+      "Change of clothes",
+      "Essential toiletries",
+      "Hotel / travel information"
+    ]
+  },
+
+  {
+    name: "Hotel Extras",
+    icon: "🏨",
+    items: [
+      "Sleep mask",
+      "Earplugs",
+      "Laundry bag",
+      "Small tote bag",
+      "Reusable shopping bag",
+      "Travel-size detergent",
+      "Small fan",
+      "Extra charging cable",
+      "Rice cooker",
+      "Slippers",
+      "Steamer stick (HDMI TV)",
+      "Disposable cups, plates, plasticware"
+    ]
+  },
+
+  {
+    name: "Road Trip",
+    icon: "🚗",
+    items: [
+      "Driver's license",
+      "Vehicle registration",
+      "Car insurance information",
+      "Car charger",
+      "Road-trip snacks",
+      "Water",
+      "Blanket",
+      "Emergency kit",
+      "Jumper cables",
+      "Tire-pressure gauge",
+      "Trash bags",
+      "Offline maps"
+    ]
+  },
+
+  {
+    name: "Before You Leave Home",
+    icon: "🏠",
+    items: [
+      "Check the cats",
+      "Cat food",
+      "Unplug the plugs",
+      "Lock doors and windows",
+      "Take out the trash",
+      "Turn off appliances",
+      "Check the stove / oven",
+      "Set thermostat",
+      "Take out perishables",
+      "Check pet / care arrangements",
+      "Download tickets / reservations",
+      "Check the weather",
+      "Weigh luggage"
+    ]
+  }
+
+];
+
+
+/*
+  SAVED STATE
+*/
+
+let state = {
+  checked: {},
+  removed: {},
+  custom: {}
+};
+
+
+/*
+  LOAD
+*/
+
+function loadState() {
+
+  try {
+
+    const saved =
+      localStorage.getItem(STORAGE_KEY);
+
+    if (saved) {
+
+      const parsed =
+        JSON.parse(saved);
+
+      state = {
+        checked: parsed.checked || {},
+        removed: parsed.removed || {},
+        custom: parsed.custom || {}
+      };
 
     }
 
-  }
+  } catch (error) {
 
-
-  /*
-    SAVE
-  */
-
-  function saveState() {
-
-    localStorage.setItem(
-
-      STORAGE_KEY,
-
-      JSON.stringify(state)
-
+    console.log(
+      "Could not load saved checklist.",
+      error
     );
 
   }
 
-
-  /*
-    CREATE UNIQUE ID
-  */
-
-  function makeId(
-    category,
-    item
-  ) {
-
-    return (
-      category +
-      "::" +
-      item
-    );
-
-  }
+}
 
 
-  /*
-    RENDER EVERYTHING
-  */
+/*
+  SAVE
+*/
 
-  function render() {
+function saveState() {
 
-    const list =
-      document.getElementById(
-        "list"
-      );
+  localStorage.setItem(
+    STORAGE_KEY,
+    JSON.stringify(state)
+  );
 
-    list.innerHTML = "";
-
-    let total = 0;
-
-    let completed = 0;
+}
 
 
-    categories.forEach(
-      category => {
+/*
+  UNIQUE ID
+*/
 
-        const builtInItems =
-          category.items.filter(
-            item => {
+function makeId(category, item) {
 
-              const id =
-                makeId(
-                  category.name,
-                  item
-                );
+  return category + "::" + item;
 
-              return !state.removed[id];
+}
 
-            }
+
+/*
+  RENDER
+*/
+
+function render() {
+
+  const list =
+    document.getElementById("list");
+
+  list.innerHTML = "";
+
+  let total = 0;
+  let completed = 0;
+
+
+  categories.forEach(category => {
+
+    const builtInItems =
+      category.items.filter(item => {
+
+        const id =
+          makeId(
+            category.name,
+            item
           );
 
+        return !state.removed[id];
 
-        const customItems =
-          Array.isArray(
-            state.custom[category.name]
-          )
-            ? state.custom[category.name]
-            : [];
+      });
 
 
-        const allItems = [
+    const customItems =
+      Array.isArray(
+        state.custom[category.name]
+      )
+        ? state.custom[category.name]
+        : [];
 
-          ...builtInItems.map(
-            text => ({
-              text: text,
-              custom: false,
-              id: makeId(
-                category.name,
-                text
-              )
-            })
-          ),
 
-          ...customItems.map(
-            item => ({
-              text: item.text,
-              custom: true,
-              id: item.id
-            })
-          )
+    const allItems = [
 
-        ];
+      ...builtInItems.map(text => ({
+        text: text,
+        custom: false,
+        id: makeId(
+          category.name,
+          text
+        )
+      })),
 
+      ...customItems.map(item => ({
+        text: item.text,
+        custom: true,
+        id: item.id
+      }))
 
-        /*
-          Don't display an empty category.
-        */
+    ];
 
-        if (
-          allItems.length === 0
-        ) {
 
-          /*
-            Still show the category
-            because you can add to it.
-          */
+    const section =
+      document.createElement("section");
 
-        }
-
-
-        const section =
-          document.createElement(
-            "section"
-          );
-
-        section.className =
-          "category";
-
-
-        /*
-          CATEGORY HEADER
-        */
-
-        const header =
-          document.createElement(
-            "div"
-          );
-
-        header.className =
-          "category-header";
-
-
-        const title =
-          document.createElement(
-            "h2"
-          );
-
-        title.className =
-          "category-title";
-
-
-        const icon =
-          document.createElement(
-            "span"
-          );
-
-        icon.className =
-          "category-icon";
-
-        icon.textContent =
-          category.icon;
-
-
-        const categoryName =
-          document.createElement(
-            "span"
-          );
-
-        categoryName.className =
-          "category-name";
-
-        categoryName.textContent =
-          category.name;
-
-
-        const count =
-          document.createElement(
-            "span"
-          );
-
-        count.className =
-          "category-count";
-
-
-        const categoryCompleted =
-          allItems.filter(
-            item =>
-              state.checked[
-                item.id
-              ]
-          ).length;
-
-
-        count.textContent =
-          `${categoryCompleted}/${allItems.length}`;
-
-
-        title.appendChild(icon);
-
-        title.appendChild(
-          categoryName
-        );
-
-        title.appendChild(
-          count
-        );
-
-
-        /*
-          ADD BUTTON
-        */
-
-        const addButton =
-          document.createElement(
-            "button"
-          );
-
-        addButton.className =
-          "category-add-btn";
-
-        addButton.textContent =
-          "＋ Add";
-
-
-        header.appendChild(title);
-
-        header.appendChild(
-          addButton
-        );
-
-
-        /*
-          ADD BOX
-        */
-
-        const addBox =
-          document.createElement(
-            "div"
-          );
-
-        addBox.className =
-          "category-add-box";
-
-
-        const input =
-          document.createElement(
-            "input"
-          );
-
-        input.className =
-          "category-add-input";
-
-        input.type =
-          "text";
-
-        input.maxLength =
-          100;
-
-        input.placeholder =
-          `Add to ${category.name}...`;
-
-
-        const saveButton =
-          document.createElement(
-            "button"
-          );
-
-        saveButton.className =
-          "category-save-btn";
-
-        saveButton.textContent =
-          "Add";
-
-
-        const cancelButton =
-          document.createElement(
-            "button"
-          );
-
-        cancelButton.className =
-          "category-cancel-btn";
-
-        cancelButton.textContent =
-          "Cancel";
-
-
-        addBox.appendChild(input);
-
-        addBox.appendChild(
-          saveButton
-        );
-
-        addBox.appendChild(
-          cancelButton
-        );
-
-
-        addButton.addEventListener(
-          "click",
-          () => {
-
-            addBox.classList.toggle(
-              "open"
-            );
-
-            if (
-              addBox.classList.contains(
-                "open"
-              )
-            ) {
-
-              input.focus();
-
-            }
-
-          }
-        );
-
-
-        cancelButton.addEventListener(
-          "click",
-          () => {
-
-            input.value = "";
-
-            addBox.classList.remove(
-              "open"
-            );
-
-          }
-        );
-
-
-        function addCustomItem() {
-
-          const text =
-            input.value.trim();
-
-
-          if (!text) {
-
-            input.focus();
-
-            return;
-
-          }
-
-
-          if (
-            !Array.isArray(
-              state.custom[
-                category.name
-              ]
-            )
-          ) {
-
-            state.custom[
-              category.name
-            ] = [];
-
-          }
-
-
-          state.custom[
-            category.name
-          ].push({
-
-            id:
-              "custom_" +
-              Date.now() +
-              "_" +
-              Math.random()
-                .toString(36)
-                .slice(2, 8),
-
-            text: text
-
-          });
-
-
-          saveState();
-
-          render();
-
-        }
-
-
-        saveButton.addEventListener(
-          "click",
-          addCustomItem
-        );
-
-
-        input.addEventListener(
-          "keydown",
-          event => {
-
-            if (
-              event.key === "Enter"
-            ) {
-
-              addCustomItem();
-
-            }
-
-            if (
-              event.key === "Escape"
-            ) {
-
-              input.value = "";
-
-              addBox.classList.remove(
-                "open"
-              );
-
-            }
-
-          }
-        );
-
-
-        /*
-          ITEMS
-        */
-
-        const itemsContainer =
-          document.createElement(
-            "div"
-          );
-
-        itemsContainer.className =
-          "items";
-
-
-        allItems.forEach(
-          item => {
-
-            total++;
-
-
-            if (
-              state.checked[
-                item.id
-              ]
-            ) {
-
-              completed++;
-
-            }
-
-
-            itemsContainer.appendChild(
-
-              createItem(
-
-                category.name,
-
-                item.text,
-
-                item.custom,
-
-                item.id
-
-              )
-
-            );
-
-          }
-        );
-
-
-        section.appendChild(
-          header
-        );
-
-        section.appendChild(
-          addBox
-        );
-
-        section.appendChild(
-          itemsContainer
-        );
-
-
-        list.appendChild(
-          section
-        );
-
-      }
-    );
-
-
-    updateProgress(
-      total,
-      completed
-    );
-
-  }
-
-
-  /*
-    CREATE ITEM
-  */
-
-  function createItem(
-    categoryName,
-    text,
-    isCustom,
-    id
-  ) {
-
-    const row =
-      document.createElement(
-        "div"
-      );
-
-    row.className =
-      "item";
-
-
-    const checked =
-      !!state.checked[id];
-
-
-    if (checked) {
-
-      row.classList.add(
-        "checked"
-      );
-
-    }
+    section.className = "category";
 
 
     /*
-      CHECKBOX
+      HEADER
     */
 
-    const checkbox =
-      document.createElement(
-        "button"
-      );
+    const header =
+      document.createElement("div");
 
-    checkbox.className =
-      "checkbox";
+    header.className =
+      "category-header";
 
 
-    if (checked) {
+    const title =
+      document.createElement("h2");
 
-      checkbox.classList.add(
-        "checked"
-      );
-
-    }
+    title.className =
+      "category-title";
 
 
-    checkbox.setAttribute(
-      "aria-label",
-      `Mark ${text} as packed`
-    );
+    const icon =
+      document.createElement("span");
 
+    icon.className =
+      "category-icon";
 
-    const checkmark =
-      document.createElement(
-        "span"
-      );
+    icon.textContent =
+      category.icon;
 
-    checkmark.className =
-      "checkmark";
-
-    checkmark.textContent =
-      "✓";
-
-
-    checkbox.appendChild(
-      checkmark
-    );
-
-
-    checkbox.addEventListener(
-      "click",
-      () => {
-
-        state.checked[id] =
-          !state.checked[id];
-
-        saveState();
-
-        render();
-
-      }
-    );
-
-
-    /*
-      NAME
-    */
 
     const name =
-      document.createElement(
-        "div"
-      );
+      document.createElement("span");
 
     name.className =
-      "item-name";
+      "category-name";
 
     name.textContent =
-      text;
+      category.name;
 
 
-    if (isCustom) {
+    const count =
+      document.createElement("span");
 
-      const label =
-        document.createElement(
-          "span"
+    count.className =
+      "category-count";
+
+
+    const categoryCompleted =
+      allItems.filter(
+        item =>
+          state.checked[item.id]
+      ).length;
+
+
+    count.textContent =
+      `${categoryCompleted}/${allItems.length}`;
+
+
+    title.appendChild(icon);
+    title.appendChild(name);
+    title.appendChild(count);
+
+
+    /*
+      ADD BUTTON
+    */
+
+    const addButton =
+      document.createElement("button");
+
+    addButton.className =
+      "category-add-btn";
+
+    addButton.textContent =
+      "＋ Add";
+
+
+    header.appendChild(title);
+    header.appendChild(addButton);
+
+
+    /*
+      ADD BOX
+    */
+
+    const addBox =
+      document.createElement("div");
+
+    addBox.className =
+      "category-add-box";
+
+
+    const input =
+      document.createElement("input");
+
+    input.className =
+      "category-add-input";
+
+    input.type = "text";
+
+    input.maxLength = 100;
+
+    input.placeholder =
+      `Add to ${category.name}...`;
+
+
+    const saveButton =
+      document.createElement("button");
+
+    saveButton.className =
+      "category-save-btn";
+
+    saveButton.textContent =
+      "Add";
+
+
+    const cancelButton =
+      document.createElement("button");
+
+    cancelButton.className =
+      "category-cancel-btn";
+
+    cancelButton.textContent =
+      "Cancel";
+
+
+    addBox.appendChild(input);
+    addBox.appendChild(saveButton);
+    addBox.appendChild(cancelButton);
+
+
+    addButton.addEventListener(
+      "click",
+      () => {
+
+        addBox.classList.toggle(
+          "open"
         );
 
-      label.className =
-        "custom-label";
+        if (
+          addBox.classList.contains(
+            "open"
+          )
+        ) {
 
-      label.textContent =
-        "custom";
+          input.focus();
 
-      name.appendChild(
-        label
-      );
+        }
+
+      }
+    );
+
+
+    cancelButton.addEventListener(
+      "click",
+      () => {
+
+        input.value = "";
+
+        addBox.classList.remove(
+          "open"
+        );
+
+      }
+    );
+
+
+    function addCustomItem() {
+
+      const text =
+        input.value.trim();
+
+
+      if (!text) {
+
+        input.focus();
+
+        return;
+
+      }
+
+
+      if (
+        !Array.isArray(
+          state.custom[
+            category.name
+          ]
+        )
+      ) {
+
+        state.custom[
+          category.name
+        ] = [];
+
+      }
+
+
+      state.custom[
+        category.name
+      ].push({
+
+        id:
+          "custom_" +
+          Date.now() +
+          "_" +
+          Math.random()
+            .toString(36)
+            .slice(2, 8),
+
+        text: text
+
+      });
+
+
+      saveState();
+
+      render();
 
     }
 
 
+    saveButton.addEventListener(
+      "click",
+      addCustomItem
+    );
+
+
+    input.addEventListener(
+      "keydown",
+      event => {
+
+        if (
+          event.key === "Enter"
+        ) {
+
+          addCustomItem();
+
+        }
+
+        if (
+          event.key === "Escape"
+        ) {
+
+          input.value = "";
+
+          addBox.classList.remove(
+            "open"
+          );
+
+        }
+
+      }
+    );
+
+
     /*
-      DELETE
+      ITEMS
     */
 
-    const deleteButton =
-      document.createElement(
-        "button"
+    const itemsContainer =
+      document.createElement("div");
+
+    itemsContainer.className =
+      "items";
+
+
+    allItems.forEach(item => {
+
+      total++;
+
+
+      if (
+        state.checked[item.id]
+      ) {
+
+        completed++;
+
+      }
+
+
+      itemsContainer.appendChild(
+
+        createItem(
+          category.name,
+          item.text,
+          item.custom,
+          item.id
+        )
+
       );
 
-    deleteButton.className =
-      "delete-btn";
-
-    deleteButton.textContent =
-      "×";
-
-    deleteButton.title =
-      "Remove item";
+    });
 
 
-    deleteButton.setAttribute(
-      "aria-label",
-      `Remove ${text}`
+    section.appendChild(header);
+
+    section.appendChild(addBox);
+
+    section.appendChild(
+      itemsContainer
     );
 
+    list.appendChild(section);
 
-    deleteButton.addEventListener(
-      "click",
-      () => {
-
-        const confirmed =
-          confirm(
-            `Remove "${text}" from your packing list?`
-          );
+  });
 
 
-        if (!confirmed) {
-
-          return;
-
-        }
-
-
-        if (isCustom) {
-
-          state.custom[
-            categoryName
-          ] =
-            state.custom[
-              categoryName
-            ].filter(
-              item =>
-                item.id !== id
-            );
-
-
-        } else {
-
-          state.removed[id] =
-            true;
-
-        }
-
-
-        delete state.checked[id];
-
-
-        saveState();
-
-        render();
-
-      }
-    );
-
-
-    row.appendChild(
-      checkbox
-    );
-
-    row.appendChild(
-      name
-    );
-
-    row.appendChild(
-      deleteButton
-    );
-
-
-    return row;
-
-  }
-
-
-  /*
-    PROGRESS
-  */
-
-  function updateProgress(
+  updateProgress(
     total,
     completed
-  ) {
+  );
 
-    const percent =
-      total === 0
-        ? 0
-        : Math.round(
-            completed /
-            total *
-            100
+}
+
+
+/*
+  CREATE ITEM
+*/
+
+function createItem(
+  categoryName,
+  text,
+  isCustom,
+  id
+) {
+
+  const row =
+    document.createElement("div");
+
+  row.className = "item";
+
+
+  const checked =
+    !!state.checked[id];
+
+
+  if (checked) {
+
+    row.classList.add("checked");
+
+  }
+
+
+  /*
+    CHECKBOX
+  */
+
+  const checkbox =
+    document.createElement("button");
+
+  checkbox.className =
+    "checkbox";
+
+
+  if (checked) {
+
+    checkbox.classList.add(
+      "checked"
+    );
+
+  }
+
+
+  const checkmark =
+    document.createElement("span");
+
+  checkmark.className =
+    "checkmark";
+
+  checkmark.textContent =
+    "✓";
+
+
+  checkbox.appendChild(
+    checkmark
+  );
+
+
+  checkbox.addEventListener(
+    "click",
+    () => {
+
+      state.checked[id] =
+        !state.checked[id];
+
+      saveState();
+
+      render();
+
+    }
+  );
+
+
+  /*
+    NAME
+  */
+
+  const name =
+    document.createElement("div");
+
+  name.className =
+    "item-name";
+
+  name.textContent =
+    text;
+
+
+  if (isCustom) {
+
+    const label =
+      document.createElement("span");
+
+    label.className =
+      "custom-label";
+
+    label.textContent =
+      "custom";
+
+    name.appendChild(label);
+
+  }
+
+
+  /*
+    DELETE
+  */
+
+  const deleteButton =
+    document.createElement("button");
+
+  deleteButton.className =
+    "delete-btn";
+
+  deleteButton.textContent =
+    "×";
+
+  deleteButton.title =
+    "Remove item";
+
+
+  deleteButton.addEventListener(
+    "click",
+    () => {
+
+      if (
+        !confirm(
+          `Remove "${text}" from your packing list?`
+        )
+      ) {
+
+        return;
+
+      }
+
+
+      if (isCustom) {
+
+        state.custom[
+          categoryName
+        ] =
+          state.custom[
+            categoryName
+          ].filter(
+            item =>
+              item.id !== id
           );
 
+      } else {
 
-    document.getElementById(
-      "progressText"
-    ).textContent =
-      `${completed} of ${total} packed`;
-
-
-    document.getElementById(
-      "progressPercent"
-    ).textContent =
-      `${percent}%`;
-
-
-    document.getElementById(
-      "progressFill"
-    ).style.width =
-      `${percent}%`;
-
-  }
-
-
-  /*
-    UNCHECK EVERYTHING
-  */
-
-  document
-    .getElementById(
-      "uncheckAll"
-    )
-    .addEventListener(
-      "click",
-      () => {
-
-        if (
-          !confirm(
-            "Uncheck everything?"
-          )
-        ) {
-
-          return;
-
-        }
-
-
-        state.checked = {};
-
-
-        saveState();
-
-        render();
+        state.removed[id] =
+          true;
 
       }
-    );
 
 
-  /*
-    RESET EVERYTHING
-  */
+      delete state.checked[id];
 
-  document
-    .getElementById(
-      "resetAll"
-    )
-    .addEventListener(
-      "click",
-      () => {
+      saveState();
 
-        if (
-          !confirm(
-            "Restore the original packing list and remove all custom items?"
-          )
-        ) {
+      render();
 
-          return;
-
-        }
+    }
+  );
 
 
-        state = {
+  row.appendChild(
+    checkbox
+  );
 
-          checked: {},
+  row.appendChild(
+    name
+  );
 
-          removed: {},
-
-          custom: {}
-
-        };
+  row.appendChild(
+    deleteButton
+  );
 
 
-        saveState();
+  return row;
 
-        render();
+}
+
+
+/*
+  PROGRESS
+*/
+
+function updateProgress(
+  total,
+  completed
+) {
+
+  const percent =
+    total === 0
+      ? 0
+      : Math.round(
+          completed /
+          total *
+          100
+        );
+
+
+  document.getElementById(
+    "progressText"
+  ).textContent =
+    `${completed} of ${total} packed`;
+
+
+  document.getElementById(
+    "progressPercent"
+  ).textContent =
+    `${percent}%`;
+
+
+  document.getElementById(
+    "progressFill"
+  ).style.width =
+    `${percent}%`;
+
+}
+
+
+/*
+  UNCHECK ALL
+*/
+
+document
+  .getElementById("uncheckAll")
+  .addEventListener(
+    "click",
+    () => {
+
+      if (
+        !confirm(
+          "Uncheck everything?"
+        )
+      ) {
+
+        return;
 
       }
-    );
 
 
-  /*
-    SERVICE WORKER
-  */
+      state.checked = {};
 
-  if (
-    "serviceWorker" in navigator
-  ) {
+      saveState();
 
-    window.addEventListener(
-      "load",
-      () => {
+      render();
 
-        navigator.serviceWorker
-          .register(
-            "./service-worker.js"
-          )
-          .then(() => {
+    }
+  );
 
-            console.log(
-              "Offline mode ready."
-            );
 
-          })
-          .catch(error => {
+/*
+  RESET
+*/
 
-            console.log(
-              "Service worker error:",
-              error
-            );
+document
+  .getElementById("resetAll")
+  .addEventListener(
+    "click",
+    () => {
 
-          });
+      if (
+        !confirm(
+          "Restore all original items and remove your custom items?"
+        )
+      ) {
+
+        return;
 
       }
-    );
-
-  }
 
 
-  /*
-    START APP
-  */
+      state = {
+        checked: {},
+        removed: {},
+        custom: {}
+      };
 
-  loadState();
 
-  render();
+      saveState();
+
+      render();
+
+    }
+  );
+
+
+/*
+  SERVICE WORKER
+*/
+
+if (
+  "serviceWorker" in navigator
+) {
+
+  window.addEventListener(
+    "load",
+    () => {
+
+      navigator.serviceWorker
+        .register(
+          "./service-worker.js"
+        )
+        .then(() => {
+
+          console.log(
+            "Offline mode ready."
+          );
+
+        })
+        .catch(error => {
+
+          console.log(
+            "Service worker error:",
+            error
+          );
+
+        });
+
+    }
+  );
+
+}
+
+
+/*
+  START
+*/
+
+loadState();
+
+render();
 
 </script>
 
